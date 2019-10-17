@@ -51,6 +51,8 @@ public:
 
     void InitLogHtml();
     void InitLog();
+
+    void DelLogFile(QDate begin,QDate end,QString path);
     
 private:
     void openLog();

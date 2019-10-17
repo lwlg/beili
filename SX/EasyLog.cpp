@@ -1,5 +1,6 @@
 #include "EasyLog.h"
 #include <QDir>
+#include <QDirIterator>
 #include <QSettings>
 #include <QApplication>
 #include <QDebug>
@@ -58,6 +59,11 @@ void EasyLog::InitLog()
 
 
     QString date = QDate::currentDate().toString("yyyy-MM-dd");
+    QDate delDate = QDate::currentDate().addDays(-7);
+
+    qDebug()<<_applicationDir.path()+"/";
+    DelLogFile(delDate,QDate::currentDate(),_applicationDir.path()+"/");
+
     //QString time = QTime::currentTime().toString("hh-mm-ss");
     QString fileNamelog;
     fileNamelog+=date;
@@ -86,6 +92,36 @@ void EasyLog::InitLog()
     {
         QString _err = m_log.errorString();
     }
+}
+
+void EasyLog::DelLogFile(QDate begintime, QDate endtime, QString path)
+{
+    QDir dir(path);
+    QStringList nameFilters;
+    nameFilters << "*.log";
+    QStringList files = dir.entryList(nameFilters, QDir::Files|QDir::Readable, QDir::Name);
+
+    if(dir.count() == 0)
+    {
+        return;
+    }
+
+    qDebug()<<"@@@@@";
+
+    for (int var = 0; var < files.count(); var++)
+    {
+        QString fname = files[var];
+        fname.left(10);
+        qDebug()<<"@"<<fname;
+        QDate tmpDate = QDate::fromString(fname.left(10),"yyyy-MM-dd");
+
+        if ( tmpDate.isValid() && tmpDate > begintime && tmpDate < endtime) {
+            dir.remove(files[var]);
+        }else{
+            qDebug()<<"@del fail";
+        }
+    }
+
 }
 
 void EasyLog::openLog()
