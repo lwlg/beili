@@ -226,8 +226,23 @@ void MainWindow::on_btn_queryInGoods_clicked()
 {
     QString gstrcode = ui->lineEdit_goodCode->text();
     QString gstrSupp = ui->lineEdit_goodsupplier->text();
+    QString gstrGoodName   = ui->lineEdit_goodName->text();
+    QString sql;
 
-    QString sql = QString::asprintf(JH_PriceQuery, C_STR(gstrcode),C_STR(gstrSupp));
+    if (ui->checkBox_GoodInTime->isChecked())
+    {
+        LOGINFO("加进货时间的查询");
+        QString gstrGoodInTime =  ui->dateEdit->text();
+        sql = QString::asprintf(JH_PriceQuery_InTime, C_STR(gstrcode),C_STR(gstrSupp),C_STR(gstrGoodName),
+                                        C_STR(gstrGoodInTime));
+    }
+    else
+    {
+        LOGINFO("不加进货时间的查询");
+        sql = QString::asprintf(JH_PriceQuery, C_STR(gstrcode),C_STR(gstrSupp),C_STR(gstrGoodName));
+
+    }
+
     lwlgout<<sql;
     LOGINFO(sql);
     this->pmode_jh->setQuery(sql);
@@ -403,6 +418,9 @@ void MainWindow::InitDtCtlData()
     begin.setTime(QTime(6,0,0));
     ui->dt_XSbegin->setDateTime(begin);
     ui->dt_XSend->setDateTime(QDateTime::currentDateTime());
+
+
+    ui->dateEdit->setDate(QDate::currentDate());//库存表时间
 }
 
 ///[切换界面]

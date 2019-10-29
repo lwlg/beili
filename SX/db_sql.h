@@ -24,7 +24,12 @@
 
 
 //价格查询
-#define JH_PriceQuery  "SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%%s%') and (GoodSupplier like '%%%s%')"
+//#define JH_PriceQuery  "SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%%s%') and (GoodSupplier like '%%%s%')"
+#define JH_PriceQuery  "SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%%s%') and (GoodSupplier like '%%%s%') and (GoodName like '%%%s%')ORDER BY GoodInTime DESC"
+
+
+#define JH_PriceQuery_InTime  "SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%%s%') and (GoodSupplier like '%%%s%') and (GoodName like '%%%s%')"\
+    "and (GoodInTime like '%s')ORDER BY GoodInTime DESC"
 
 //插入数据
 #define JH_Inser   "insert into sx_jinhuo (GoodCode,GoodName,GoodBrand,GoodType,GoodUnit,GoodInCnt,GoodPrice, GoodMoney, GoodSupplier,GoodInTime ,Memo) " \

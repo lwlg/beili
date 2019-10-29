@@ -61,24 +61,14 @@
         <property name="verticalSpacing">
          <number>3</number>
         </property>
-        <item row="1" column="3">
+        <item row="1" column="7">
          <widget class="QLabel" name="label_3">
           <property name="text">
            <string>供货商:</string>
           </property>
          </widget>
         </item>
-        <item row="4" column="0" colspan="8">
-         <widget class="QTableView" name="tableViewJH"/>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string> 商品编码:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="4">
+        <item row="1" column="8">
          <widget class="QLineEdit" name="lineEdit_goodsupplier">
           <property name="font">
            <font>
@@ -88,17 +78,17 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="2">
-         <widget class="QLineEdit" name="lineEdit_goodCode">
-          <property name="font">
-           <font>
-            <family>宋体</family>
-            <pointsize>14</pointsize>
-           </font>
+        <item row="4" column="1" colspan="11">
+         <widget class="QTableView" name="tableViewJH"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string> 商品编码:</string>
           </property>
          </widget>
         </item>
-        <item row="1" column="6">
+        <item row="1" column="10">
          <spacer name="horizontalSpacer_2">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -111,17 +101,65 @@
           </property>
          </spacer>
         </item>
-        <item row="1" column="5">
+        <item row="1" column="9">
          <widget class="QPushButton" name="btn_queryInGoods">
           <property name="text">
            <string>查询</string>
           </property>
          </widget>
         </item>
-        <item row="0" column="0" colspan="3">
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lineEdit_goodCode">
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="3">
          <widget class="QLabel" name="label_4">
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:blue&quot;&gt;请输入编码或者供货商信息点击查询&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#0000ff;&quot;&gt;请输入编码/商品名称或者供货商信息点击查询&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string> 商品名称:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QLineEdit" name="lineEdit_goodName">
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="checkBox_GoodInTime">
+          <property name="text">
+           <string> 进货时间:</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="date">
+           <date>
+            <year>2019</year>
+            <month>10</month>
+            <day>1</day>
+           </date>
           </property>
          </widget>
         </item>
