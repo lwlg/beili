@@ -59,7 +59,7 @@ void EasyLog::InitLog()
 
 
     QString date = QDate::currentDate().toString("yyyy-MM-dd");
-    QDate delDate = QDate::currentDate().addDays(-7);
+    QDate delDate = QDate::currentDate().addDays(-30);
 
     qDebug()<<_applicationDir.path()+"/";
     DelLogFile(delDate,QDate::currentDate(),_applicationDir.path()+"/");

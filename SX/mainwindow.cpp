@@ -99,7 +99,7 @@ void MainWindow::setHeader_XSTB()
 ///[初始化UI]
 void MainWindow::InitUI()
 {
-    this->setWindowTitle("三星 ver:"+theIni.getStrImp("config/version"));
+    this->setWindowTitle("lwlg Ver:"+theIni.getStrImp("config/version"));
 
     this->InitTabView(ui->tableViewSX);
 
@@ -248,6 +248,15 @@ void MainWindow::on_btn_queryInGoods_clicked()
     this->pmode_jh->setQuery(sql);
     ui->tableViewJH->setModel(this->pmode_jh);
     setHeader_JHTB();
+
+
+    int iret = this->pmode_jh->rowCount();
+    if (iret != 0)
+        QMessageBox::information(this,"查询提示",tr("查询成功,共%1条").arg(iret));
+    else
+        QMessageBox::warning(this,"查询提示",tr("未查询到数据").arg(iret));
+
+
 
 }
 ///![商品价格查询]
@@ -408,7 +417,6 @@ void MainWindow::onModify()
     }
 }
 ///![修改操作]
-
 
 
 void MainWindow::InitDtCtlData()

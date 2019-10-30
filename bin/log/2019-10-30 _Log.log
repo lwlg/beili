@@ -1,0 +1,45 @@
+//initial log success
+
+[INFO] [Index: 0] 2019-10-30 21:55:55 <...\SX\main.cpp.>@16=>qMain:   版本号:202010.1
+[INFO] [Index: 1] 2019-10-30 21:56:54 <...\SX\mainwindow.cpp.>@241=>on_btn_queryInGoods_clicked:   不加进货时间的查询
+[INFO] [Index: 2] 2019-10-30 21:56:54 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')ORDER BY GoodInTime DESC
+[INFO] [Index: 3] 2019-10-30 21:57:15 <...\SX\mainwindow.cpp.>@234=>on_btn_queryInGoods_clicked:   加进货时间的查询
+[INFO] [Index: 4] 2019-10-30 21:57:15 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')and (GoodInTime like '2019/10/23')ORDER BY GoodInTime DESC
+[INFO] [Index: 5] 2019-10-30 21:57:21 <...\SX\mainwindow.cpp.>@234=>on_btn_queryInGoods_clicked:   加进货时间的查询
+[INFO] [Index: 6] 2019-10-30 21:57:21 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')and (GoodInTime like '2019/10/23')ORDER BY GoodInTime DESC
+[INFO] [Index: 7] 2019-10-30 21:57:51 <...\SX\mainwindow.cpp.>@234=>on_btn_queryInGoods_clicked:   加进货时间的查询
+[INFO] [Index: 8] 2019-10-30 21:57:51 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')and (GoodInTime like '2019/10/14')ORDER BY GoodInTime DESC
+[INFO] [Index: 9] 2019-10-30 21:58:28 <...\SX\mainwindow.cpp.>@241=>on_btn_queryInGoods_clicked:   不加进货时间的查询
+[INFO] [Index: 10] 2019-10-30 21:58:28 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%bjn%') and (GoodSupplier like '%%') and (GoodName like '%%')ORDER BY GoodInTime DESC
+[INFO] [Index: 11] 2019-10-30 21:58:48 <...\SX\sngener.cpp.>@34=>saveCnt:   保存数据成功>>0,2019-10-30
+//initial log success
+
+[INFO] [Index: 0] 2019-10-30 22:02:33 <...\SX\main.cpp.>@16=>qMain:   版本号:202010.1
+[INFO] [Index: 1] 2019-10-30 22:02:33 <...\SX\sngener.cpp.>@25=>readCnt:   读取数据>>0
+[INFO] [Index: 2] 2019-10-30 22:02:36 <...\SX\mainwindow.cpp.>@241=>on_btn_queryInGoods_clicked:   不加进货时间的查询
+[INFO] [Index: 3] 2019-10-30 22:02:36 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')ORDER BY GoodInTime DESC
+[INFO] [Index: 4] 2019-10-30 22:02:42 <...\SX\mainwindow.cpp.>@234=>on_btn_queryInGoods_clicked:   加进货时间的查询
+[INFO] [Index: 5] 2019-10-30 22:02:42 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')and (GoodInTime like '2019/10/30')ORDER BY GoodInTime DESC
+[INFO] [Index: 6] 2019-10-30 22:03:00 <...\SX\mainwindow.cpp.>@234=>on_btn_queryInGoods_clicked:   加进货时间的查询
+[INFO] [Index: 7] 2019-10-30 22:03:00 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')and (GoodInTime like '2019/10/23')ORDER BY GoodInTime DESC
+[INFO] [Index: 8] 2019-10-30 22:03:04 <...\SX\sngener.cpp.>@34=>saveCnt:   保存数据成功>>0,2019-10-30
+//initial log success
+
+[INFO] [Index: 0] 2019-10-30 22:11:42 <...\SX\main.cpp.>@16=>qMain:   版本号:202010.1
+[INFO] [Index: 1] 2019-10-30 22:11:42 <...\SX\sngener.cpp.>@25=>readCnt:   读取数据>>0
+[INFO] [Index: 2] 2019-10-30 22:11:48 <...\SX\mainwindow.cpp.>@241=>on_btn_queryInGoods_clicked:   不加进货时间的查询
+[INFO] [Index: 3] 2019-10-30 22:11:48 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')ORDER BY GoodInTime DESC
+[INFO] [Index: 4] 2019-10-30 22:11:56 <...\SX\mainwindow.cpp.>@241=>on_btn_queryInGoods_clicked:   不加进货时间的查询
+[INFO] [Index: 5] 2019-10-30 22:11:56 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')ORDER BY GoodInTime DESC
+[INFO] [Index: 6] 2019-10-30 22:12:10 <...\SX\mainwindow.cpp.>@234=>on_btn_queryInGoods_clicked:   加进货时间的查询
+[INFO] [Index: 7] 2019-10-30 22:12:10 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')and (GoodInTime like '2019/10/30')ORDER BY GoodInTime DESC
+[INFO] [Index: 8] 2019-10-30 22:12:17 <...\SX\mainwindow.cpp.>@234=>on_btn_queryInGoods_clicked:   加进货时间的查询
+[INFO] [Index: 9] 2019-10-30 22:12:17 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')and (GoodInTime like '2019/10/23')ORDER BY GoodInTime DESC
+[INFO] [Index: 10] 2019-10-30 22:12:26 <...\SX\mainwindow.cpp.>@241=>on_btn_queryInGoods_clicked:   不加进货时间的查询
+[INFO] [Index: 11] 2019-10-30 22:12:26 <...\SX\mainwindow.cpp.>@247=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%300%') and (GoodSupplier like '%%') and (GoodName like '%%')ORDER BY GoodInTime DESC
+[INFO] [Index: 12] 2019-10-30 22:12:50 <...\SX\sngener.cpp.>@34=>saveCnt:   保存数据成功>>0,2019-10-30
+//initial log success
+
+[INFO] [Index: 0] 2019-10-30 22:13:22 <...\SX\main.cpp.>@16=>qMain:   版本号:2019.10.30.1
+[INFO] [Index: 1] 2019-10-30 22:13:23 <...\SX\sngener.cpp.>@25=>readCnt:   读取数据>>0
+[INFO] [Index: 2] 2019-10-30 22:13:31 <...\SX\sngener.cpp.>@34=>saveCnt:   保存数据成功>>0,2019-10-30
