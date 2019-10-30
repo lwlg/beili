@@ -99,7 +99,7 @@ void MainWindow::setHeader_XSTB()
 ///[初始化UI]
 void MainWindow::InitUI()
 {
-    this->setWindowTitle("lwlg Ver:"+theIni.getStrImp("config/version"));
+    this->setWindowTitle("贝助手 Ver:"+theIni.getStrImp("config/version"));
 
     this->InitTabView(ui->tableViewSX);
 

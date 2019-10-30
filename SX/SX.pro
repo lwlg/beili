@@ -40,3 +40,6 @@ DESTDIR += $$PWD/../bin
 
 INCLUDEPATH +=$$PWD/../SXHeader
 #LIBS    += -L$$PWD/../bin
+
+#加入图标和版本号
+RC_FILE     += version.rc
