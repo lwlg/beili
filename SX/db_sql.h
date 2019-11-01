@@ -48,6 +48,11 @@
                   "GoodMoney='%s',GoodSupplier='%s',"\
                   "GoodInTime='%s',Memo='%s'"\
                   "WHERE ID='%s'"
+
+#define tongji   "select strftime('%m', GoodInTime) 月,round(sum(GoodMoney)) 合计 from sx_jinhuo group by strftime('%Y', GoodInTime),strftime('%m', GoodInTime)"
+
+
+
 #endif // DB_SQL
 
 

@@ -27,7 +27,8 @@ class SQLHelper : public QObject
 public:
     explicit SQLHelper(QObject *parent = 0);
 
-    void Init_SQL();
+//    void Init_SQL();
+    static void Init_SQL();
 
     bool sql_Execute(QString sql);
 

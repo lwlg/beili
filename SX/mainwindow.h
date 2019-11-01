@@ -51,6 +51,8 @@ private slots:
 
     void on_tabWidget_tabBarClicked(int index);
 
+    void on_pushButton_tc_sel_clicked();
+
 private:
     void InitSQL();
 

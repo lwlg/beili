@@ -445,3 +445,42 @@ void MainWindow::on_tabWidget_tabBarClicked(int index)
     }
 }
 ///![]
+
+struct tongji_Select_Fields
+{
+    int   month;
+    int   Money;
+};
+
+///[测试]
+void MainWindow::on_pushButton_tc_sel_clicked()
+{
+    QString sTemp = QString(tongji);
+
+    QList<tongji_Select_Fields> zdlist;
+
+    QSqlQuery query;
+
+    query.setForwardOnly(true);
+
+    query.exec(sTemp);
+    while (query.next())
+    {
+        tongji_Select_Fields bag;
+        bag.month = query.value(0).toInt();
+        bag.Money = query.value(1).toInt();
+
+        zdlist.append(bag);
+    }
+
+    for (int var = 0; var < zdlist.count(); ++var) {
+
+        QString _tmp = QString::asprintf("month=%d , Money=%d",zdlist.at(var).month,zdlist.at(var).Money);
+
+        LOGINFO(">>" + _tmp);
+    }
+
+    ui->webView->setUrl(QUrl("file:///C:/Users/dell/Downloads/Compressed/QCharts-master/QCharts-master/QChart/qcharts.html"));
+
+}
+///![]

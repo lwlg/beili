@@ -20,7 +20,9 @@ void SQLHelper::Init_SQL()
 
     s_db_XS = QSqlDatabase::addDatabase("QSQLITE", "XSsqlite");
     s_db_XS.setDatabaseName(fileName);
-    if(s_db_XS.open()){
+
+    if(!s_db_XS.isOpen()){
+        s_db_XS.open();
         lwlgout<<"XS_DB open success.";
     }
 
