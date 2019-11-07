@@ -232,7 +232,10 @@ void MainWindow::on_btn_queryInGoods_clicked()
     if (ui->checkBox_GoodInTime->isChecked())
     {
         LOGINFO("加进货时间的查询");
-        QString gstrGoodInTime =  ui->dateEdit->text();
+//        QString gstrGoodInTime =  ui->dateEdit->text();
+        QString gstrGoodInTime = ui->dateEdit->date().toString("yyyy-MM-dd");
+        LOGINFO(gstrGoodInTime);
+
         sql = QString::asprintf(JH_PriceQuery_InTime, C_STR(gstrcode),C_STR(gstrSupp),C_STR(gstrGoodName),
                                         C_STR(gstrGoodInTime));
     }
