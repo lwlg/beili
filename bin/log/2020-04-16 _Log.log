@@ -1,0 +1,7 @@
+//initial log success
+
+[INFO] [Index: 0] 2020-04-16 22:04:41 <...\SX\main.cpp.>@18=>qMain:   版本号:2020.03.22.1
+[INFO] [Index: 1] 2020-04-16 22:04:43 <...\SX\mainwindow.cpp.>@35=>InitBackUpDB:   backup file DB
+[INFO] [Index: 2] 2020-04-16 22:04:54 <...\SX\mainwindow.cpp.>@302=>on_btn_queryInGoods_clicked:   不加进货时间的查询
+[INFO] [Index: 3] 2020-04-16 22:04:54 <...\SX\mainwindow.cpp.>@308=>on_btn_queryInGoods_clicked:   SELECT * FROM sx_jinhuo WHERE (GoodCode like '%%') and (GoodSupplier like '%%') and (GoodName like '%%')ORDER BY GoodInTime DESC
+[INFO] [Index: 4] 2020-04-16 22:05:10 <...\SX\sngener.cpp.>@34=>saveCnt:   保存数据成功>>0,2020-04-16
